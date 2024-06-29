@@ -1,0 +1,19 @@
+{%extends 'base.html'%}
+
+{%block main_block%}
+
+<div class="container mt-5 border shadow w-50 p-3">
+    <h4 class="text-center">Edit Expense</h4>
+    <form action="" method="post">
+        {%csrf_token%}
+        {{form}}
+        <div class="d-flex justify-content-center">
+            <div class="mt-2">
+                <button type="submit" class="btn btn-success me-3">Edit</button>
+                <a href="{%url 'expense-add'%}" class="btn btn-info">Go Back</a>
+            </div>
+        </div>
+    </form>
+</div>
+
+{%endblock%}

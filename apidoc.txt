@@ -1,0 +1,141 @@
+authentication
+
+schema:User
+
+attributes: [username,email,password]
+
+1) API for creating user account
+
+    url:http://127.0.0.1:8000/api/register/
+
+    method:post
+
+    body:{
+        username,
+        email,
+        password
+        }
+
+==========================================================
+
+Schema:Income
+
+attributes:[title,amount,category,created_date]
+
+1) API for listing all Income
+
+    url:http://127.0.0.1:8000/api/incomes/
+
+    method:GET
+
+    body:nill
+
+    authorization:{usernme,password} Basic authentication
+
+2) API for adding new income
+
+    url:http://127.0.0.1:8000/api/incomes/
+
+    method:post
+
+    body:{title,amount,category}
+
+    authorization:{usernme,password} Basic authentication
+
+3) API for fetching income detail
+
+    url:http://127.0.0.1:8000/api/incomes/{id}/
+
+    method:GET
+
+    body:nill
+
+    authorization:{usernme,password} Basic authentication
+
+4) API for updating income
+
+    url:http://127.0.0.1:8000/api/incomes/{id}/
+
+    method:PUT
+
+    body:{title,amount,category}
+
+    authorization:{usernme,password} Basic authentication
+
+5) API for deleting income
+
+ url:http://127.0.0.1:8000/api/incomes/{id}/
+
+    method:DELETE
+
+    body:nill
+
+    authorization:{usernme,password} Basic authentication
+
+==========================================================================
+
+Schema: Expense
+
+attributes:[title,amount,category,user_object,created_data,priority]
+
+1) API for listing all expenses
+
+    url:http://127.0.0.1:8000/api/expenses/
+
+    method:GET
+
+    body:nill
+
+2) API for adding a new expense
+
+    url:http://127.0.0.1:8000/api/register/
+
+    method:post
+
+    body:{title,amount,category,priority}
+
+    authorization:Basic authentication
+
+3) API for fetching expense detail
+
+    url:http://127.0.0.1:8000/api/expenses/{id}/
+
+    method:GET
+
+    body:nill
+
+    authorization:{usernme,password} Basic authentication
+
+4) API for updating expense
+
+    url:http://127.0.0.1:8000/api/expenses/{id}/
+
+    method:PUT
+
+    body:{title,amount,category}
+
+    authorization:{usernme,password} Basic authentication
+
+5) API for deleting expense
+
+    url:http://127.0.0.1:8000/api/expenses/{id}/
+
+    method:DELETE
+
+    body:nill
+
+    authorization:{usernme,password} Basic authentication
+
+
+
+
+
+
+
+
+
+
+
+
+
+
